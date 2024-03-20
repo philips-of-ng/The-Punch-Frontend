@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  font-family:'Open Sans';
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../Fonts/Open_Sans/static/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Open Sans Var';
+  src: url(../Fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+  font-family: 'Alegreya';
+  src: url(../Fonts/Alegreya/Alegreya-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../Fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto Italic';
+  src: url(../Fonts/Roboto/Roboto-Italic.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* ------------The Header------------ */
+.first-ad {
+  width: 100%;
+  padding: 10px 5%;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+}
+
+.first-ad-left {
+  width: fit-content;
+  height: 100%;
+  color: white;
+  padding-right: 10px;
+}
+
+.break-line {
+  width: 2px;
+  background-color: white;
+  height: 20px;
+}
+
+.first-ad-right {
+  width: fit-content;
+  height: 100%;
+  color: white;
+  padding-left: 10px;
+}
+
+.first-ad-left a, .first-ad-right a {
+  color: white;
+  margin: 0;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+
+/* ---------The Logo and Socials Container--------- */
+
+.invisible-header {
+  width: 100%;
+  height: fit-content;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  padding: 0 5%;
+  border-bottom: 1.2px solid black;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+ width: 25%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social > a > img {
+  flex: 1;
+  height: 20px;
+}
+
+
+.punch-logo {
+  flex: 1;
+  max-width: 250px;
+  height: 100%;
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.punch-logo img {
+  height: 60px;
+}
+
+.punch-logo > p {
+ font-size: 14px; 
+ margin: 0;
+ padding: 0;
+}
+
+
+.vid-and-search {
+ width: 17%;
+
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+}
+
+.search-icon-div {
+  margin: 0;
+  margin-right: 5px;
+  padding: 0;
+  height: 37px;
+  width: 20%;
+  background-color: red;
+  border-radius: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search-icon-div svg {
+  color: white;
+}
+
+.vid-icon-div {
+  width: 80%;
+  height: 37px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+}
+
+.vid-icon-div svg {
+  margin-right: 5px;
+  height: 20px;
+  color: white;
+}
+
+/* ------------The Navigation Bar------------ */
+
+.nav-bar {
+  width: 100%;
+  height: 50px;
+  padding: 5px 5%;
+  border: none;
+  border-bottom: 1.2px solid black;
+  background-color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar > a {
+  font-family: 'Open Sans Var';
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-bar .active {
+  color: red;
+  
+}
